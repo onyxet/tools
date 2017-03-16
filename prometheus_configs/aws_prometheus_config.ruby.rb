@@ -54,7 +54,7 @@ mem_limit = gets.chomp
 nodes.each do |node|
   open('memory.rules', 'a') { |f|
   f << "ALERT FreeMemory\n"
-  f << "\tIF node_memory_MemFree{instance=#{node},job=\"prometheus\"} < #{mem_limit} \n"
+  f << "\tIF node_memory_MemFree{instance=#{node}} < #{mem_limit} \n"
   f << "\tFOR 1s\n"
   f << "\tANNOTATIONS {\n"
   f << "\t\tsummary = \"PROBLEM ON {{ $labels.instance }}\",\n"
@@ -67,7 +67,8 @@ cpu_limit = gets.chomp
 nodes.each do |node|
   open('cpu.rules', 'a') { |c|
   c << "ALERT CPU_USAGE\n"
-  c << "\tIF sum by (instance) (irate(node_cpu{instance=#{node},job=\"instances\"}[1m])) > #{cpu_limit} \n"
+  c << "\tIF 100 - (avg by (instance) (irate(node_cpu{instance=#{node},mode=\"idle\"}[5m])) * 100) > #{cpu_limit} \n"
+  
   c << "\tFOR 10s\n"
   c << "\tANNOTATIONS {\n"
   c << "\t\tsummary = \"PROBLEM ON {{ $labels.instance }}\",\n"
@@ -79,7 +80,7 @@ puts "OK\n Enter disk usage limit in percents on root fs\n Example is 90"
 disk_limit_root = gets.chomp
 nodes.each do |node|
   open('disk_root.rules', 'a') { |c|
-  c << "ALERT disk_usage_on_/_mountpoint\n"
+  c << "ALERT disk_usage_on_root_mountpoint\n"
   c << "\tIF 100.0 - 100 * (node_filesystem_free{instance=~#{node},device !~\'tmpfs\',device!~\'by-uuid\',mountpoint=\"/\"} / node_filesystem_size{instance=~#{node},device !~\'tmpfs\',device!~\'by-uuid\',mountpoint=\"/\"}) > #{disk_limit_root} \n"
   c << "\tFOR 50s\n"
   c << "\tANNOTATIONS {\n"
@@ -92,7 +93,7 @@ puts "OK\n Enter disk usage limit in percents on /opt mountpoint\n Example is 90
 disk_limit_root = gets.chomp
 nodes.each do |node|
   open('disk_opt.rules', 'a') { |c|
-  c << "ALERT disk_usage_on_/opt_mountpoint\n"
+  c << "ALERT disk_usage_on_opt_mountpoint\n"
   c << "\tIF 100.0 - 100 * (node_filesystem_free{instance=~#{node},device !~\'tmpfs\',device!~\'by-uuid\',mountpoint=\"/opt\"} / node_filesystem_size{instance=~#{node},device !~\'tmpfs\',device!~\'by-uuid\',mountpoint=\"/opt\"}) > #{disk_limit_root} \n"
   c << "\tFOR 50s\n"
   c << "\tANNOTATIONS {\n"
