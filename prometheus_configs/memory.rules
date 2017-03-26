@@ -1,0 +1,602 @@
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.118:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.13:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.38:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.211:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.33:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.49:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='10.1.0.137:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.29:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.132.165:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.135.230:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.39:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.147:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.132.59:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.235:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.110:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.196:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.216:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.109:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.35:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.132.234:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.132.116:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.93:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.187:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.217:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.6:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.37:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.77:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.113:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.78:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.202:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.111:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.46:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.139:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.121:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.76:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.254.214:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.100:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.50:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.141:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.48:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.156:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.134.78:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.134:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.53:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.73:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.236:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.186:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.183:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.160:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.22:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.164:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.132.83:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.132.25:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.205:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.95:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.198:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.36:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.101:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.132.211:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.190:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.103:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.10:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.72:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.94:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.69:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.132.12:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.221:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.42:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.134:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.242:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.132.159:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.168:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.135.98:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.238:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.135.166:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.62:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.150:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.43:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.133.149:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.249:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.185:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.86:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.137.165:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.181:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.132.99:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
+ALERT FreeMemory
+	IF node_memory_MemFree{instance='172.31.136.159:9100'} < 314572800 
+	FOR 1s
+	ANNOTATIONS {
+		summary = "PROBLEM ON {{ $labels.instance }}",
+		description = "{{ $labels.queue }} has a (current value:{{ $value }}) bytes memory",
+}
